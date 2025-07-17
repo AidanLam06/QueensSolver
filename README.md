@@ -68,8 +68,8 @@ variables:
 - (i,j) are coordinates
 = diagonals = {(di,dj)|di,dj elementof {-1,1} = {(-1,-1),(-1,1),(1,-1),(1,1)}}
 
-1) $\\sum_{i,j} x_{i,j,c} = 1 \quad \forall c\`$ --> one crown in color c at coordinates (i,j)
-2) $\\sum_{c} x_{i,j,c} \leq 1 \quad \forall i,j\`$ --> no tile (i,j) can have more than one crown
-3) $\\sum_{j,c} x_{i,j,c} \leq 1 \quad \forall i\`$ --> no crown can have another crown in the same row
-4) $\\sum_{i,c} x_{i,j,c} \leq 1 \quad \forall j\`$ --> no crown can have another crown in the same column
-5) $\ x_{i,j,c} + x_{i+di, j+dj} \leq 1 \quad \forall i,j,c,c',(di,dj)\`$ --> no crown can have another crown diagonally adjacent to it
+1) $\\sum_{i,j} x_{i,j,c} = 1 \quad \forall c\$ --> one crown in color c at coordinates (i,j)
+2) $\\sum_{c} x_{i,j,c} \leq 1 \quad \forall i,j\$ --> no tile (i,j) can have more than one crown
+3) $\\sum_{j,c} x_{i,j,c} \leq 1 \quad \forall i\$ --> no crown can have another crown in the same row
+4) $\\sum_{i,c} x_{i,j,c} \leq 1 \quad \forall j\$ --> no crown can have another crown in the same column
+5) $\ x_{i,j,c} + x_{i+di, j+dj} \leq 1 \quad \forall i,j,c,c',(di,dj)\$ --> no crown can have another crown diagonally adjacent to it
