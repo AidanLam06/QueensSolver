@@ -32,15 +32,17 @@ The variables you pick for each color don't actually matter, the only constraint
 p p p o o g r y
 ```
 each color variable must be separated by a space
-
 example:
 this board 
+
+
 <img width="410" height="406" alt="image" src="https://github.com/user-attachments/assets/7d494f9d-4da3-4a0e-b258-6e52ecda85ba" />
 
 
 
 
 would be represented as:
+```
 p p p p p p p
 p p o p b b p
 p o o g g b b
@@ -48,6 +50,7 @@ p o e e g g b
 p p p e e b b
 p p r r y y b
 p p p r r y y
+```
 
 ### Output:
 The program will return a board with the correct placements for the crowns or if there is no solution will return a status of "INFEASABLE"
