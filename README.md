@@ -32,8 +32,8 @@ The variables you pick for each color don't actually matter, the only constraint
 p p p o o g r y
 ```
 each color variable must be separated by a space
+
 example:
-this board 
 
 
 <img width="410" height="406" alt="image" src="https://github.com/user-attachments/assets/7d494f9d-4da3-4a0e-b258-6e52ecda85ba" />
