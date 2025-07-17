@@ -56,7 +56,7 @@ p p p r r y y
 The program will return a board with the correct placements for the crowns or if there is no solution will return a status of "INFEASABLE"
 
 ## The Math
-### for this problem, the constraints would be
+### For this problem, the constraints are:
 - each crown must occupy a space in a colored square
 - only one crown can be in a square
 - no crown can be in any sqaure within the row or column that another crown already occupies
