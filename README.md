@@ -73,3 +73,8 @@ variables:
 3) $\\sum_{j,c} x_{i,j,c} \leq 1 \quad \forall i\$ --> no crown can have another crown in the same row
 4) $\\sum_{i,c} x_{i,j,c} \leq 1 \quad \forall j\$ --> no crown can have another crown in the same column
 5) $\ x_{i,j,c} + x_{i+di, j+dj, c'} \leq 1 \quad \forall i,j,c,c',(di,dj)\$ --> no crown can have another crown diagonally adjacent to it
+
+## Issues
+If you encounter a situation where you use this to solve a LinkedIn Queens problem and it returns "INFEASIBLE" I would greatly appreaciate it if you could screenshot the board and send it through the issues tab in this repository
+
+Every LinkedIn Queens problem has a solution so if you are getting "IFEASIBLE" then there is an underlying issue in my code I need to fix
