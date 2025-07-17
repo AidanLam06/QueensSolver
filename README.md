@@ -35,7 +35,9 @@ each color variable must be separated by a space
 
 example:
 this board 
-<img width="810" height="806" alt="image" src="https://github.com/user-attachments/assets/7d494f9d-4da3-4a0e-b258-6e52ecda85ba" />
+<img width="410" height="406" alt="image" src="https://github.com/user-attachments/assets/7d494f9d-4da3-4a0e-b258-6e52ecda85ba" />
+
+
 
 
 would be represented as:
