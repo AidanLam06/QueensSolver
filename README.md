@@ -53,7 +53,7 @@ p p p r r y y
 ```
 
 ### Output:
-The program will return a board with the correct placements for the crowns or if there is no solution will return a status of "INFEASABLE"
+The program will return a board with the correct placements for the crowns or if there is no solution will return a status of "INFEASIBLE"
 
 ## The Math
 ### For this problem, the constraints are:
