@@ -78,6 +78,3 @@ variables:
 If you encounter a situation where you use this to solve a LinkedIn Queens problem and it returns "INFEASIBLE" I would greatly appreaciate it if you could screenshot the board and send it through the issues tab in this repository
 
 Every LinkedIn Queens problem has a solution so if you are getting "IFEASIBLE" then there is an underlying issue in my code I need to fix
-
-
-$$sum_{i,j} x_{i,j,c} = 1 \quad \forall c$$
