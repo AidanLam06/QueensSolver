@@ -71,10 +71,5 @@ def build_2Darray(tile_dict, grid_size):
                 count += 1
             
             temp.append(assigned_char)
-        new_2Darray.append(temp)
-    
+        new_2Darray.append(temp)  
     return new_2Darray, [chars[i] for i in range(count)]
-
-if __name__ == "__main__":
-    t = process_grid("queens1.png", 9)
-    build_2Darray(t, 9)
