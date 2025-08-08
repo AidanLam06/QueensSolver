@@ -1,38 +1,24 @@
 from ortools.sat.python import cp_model
-colors = []
-grid = [] 
-x = {}
+import image_processing
+import argparse
+
+colors = [] # probably won't need this anymore
+grid = [] # Stores the 2D array
+x = {} # stores coordinate-color:argument pairs
 model = cp_model.CpModel()
 
-# initialize side length
-side_len = int(input("Enter the side length of the square: "))
+# argparse needs to contain: side length, screenshot path
+# Seems like I can completely skipp the code under "initialize colorset" and "initialize grid" since the other file builds the entire array from the screenshot
 
-# initialize colorset
-while True:
-    colorsin = input(f"Enter the {side_len} chars for each color: ").lower().split()
-    if len(colorsin) != side_len:
-        print(f"There are {side_len} colors per puzzle. Enter {side_len} and only {side_len} colors")
-    else:
-        colors = colorsin
-        break
+parser = argparse.ArgumentParser()
+parser.add_argument("--image", required=True, help="The full path to the screenshot of the Queens grid")
+parser.add_argument("--length", type=int, required=True, help="The side length of the Queens grid")
+args = parser.parse_args()
 
-print(colors)
-
-# intialize grid
-for r in range(side_len):
-    while True:
-        row = input(f"Enter row {r+1}: ").lower().split()
-        if len(row) != side_len:
-            print(f"The row you enter must have exactly {side_len} tiles. Try again")
-            continue
-        invalid = [b for b in row if b not in colors]
-        if invalid:
-            in_format = ", ".join(invalid)
-            color_format = ", ".join(colors)
-            print(f"{in_format} are invalid colors. Use : ({color_format})\n")
-        else:
-            grid.append(row)
-            break
+# initialize side length and grid
+side_len = args.length
+tileset = image_processing.process_grid(args.image, side_len)
+grid, colors = image_processing.build_2Darray(tileset, side_len)
 
 # grid legitimacy check
 for a in grid:
