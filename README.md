@@ -12,45 +12,24 @@ This program uses Google's OR-Tools Constraint Programming and Boolean Satisfiab
 
 ## Instructions
 
-1) The program will first prompt you for a grid size, which is just the side length of the square grid that the game gives you
-2) Then you will be asked for the color variables. The number of colors on the grid is the same number as the grid size, so for an 8x8 grid you would enter the 8 colors presented on the board in the following format:
-```
-p o b g e r y
-```
-p-purple
-o-orange
-b-blue
-g-green
-e-grey
-r-red
-y-yellow
-
-The variables you pick for each color don't actually matter, the only constraint is that each color must have a different variable assigned to it
-
-3) You will then be prompted for each row of the grid which you enter like:
-```
-p p p o o g r y
-```
-each color variable must be separated by a space
+- Open up a terminal and navigate to the directory where you cloned/downloaded the repository to
+--> example:
+  ```Powershell
+  cd "C:\Users\user\Documents\GitHub\QueensSolver"
+  ```
+- Take a screenshot of the Queens board such that the entire board is within the frame. The screenshot doesn't have to be perfect since the program handles borders and crops the image automatically, but do keep it close since the program won't work if the image doesn't handle as a grid.
 
 example:
 
 
-<img width="410" height="406" alt="image" src="https://github.com/user-attachments/assets/7d494f9d-4da3-4a0e-b258-6e52ecda85ba" />
+<img width="297" height="302" alt="queens1" src="https://github.com/user-attachments/assets/8f7b1f09-6c32-4fd5-9709-9aba34548017" />
 
 
-
-
-would be represented as:
+- In the terminal, write the following
+```Powershell
+python solver.py --image your-image-path --length side-length
 ```
-p p p p p p p
-p p o p b b p
-p o o g g b b
-p o e e g g b
-p p p e e b b
-p p r r y y b
-p p p r r y y
-```
+--> replacing your-image-path with the path to the screenshot you took of the board and side-length being the number of tiles along the side of the grid (for example the image above would have a side length of 9)
 
 ### Output:
 The program will return a board with the correct placements for the crowns or if there is no solution will return a status of "INFEASIBLE"
