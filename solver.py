@@ -2,13 +2,10 @@ from ortools.sat.python import cp_model
 import image_processing
 import argparse
 
-colors = [] # probably won't need this anymore
-grid = [] # Stores the 2D array
+colors = [] # stores the chars for each color
+grid = [] # stores the 2D array
 x = {} # stores coordinate-color:argument pairs
 model = cp_model.CpModel()
-
-# argparse needs to contain: side length, screenshot path
-# Seems like I can completely skipp the code under "initialize colorset" and "initialize grid" since the other file builds the entire array from the screenshot
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--image", required=True, help="The full path to the screenshot of the Queens grid")
