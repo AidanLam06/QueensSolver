@@ -45,7 +45,7 @@ The program will return a board with the correct placements for the crowns or if
 variables:
 - c = color
 - (i,j) are coordinates
-= diagonals = {(di,dj)|di,dj elementof {-1,1} = {(-1,-1),(-1,1),(1,-1),(1,1)}}
+- diagonals = {(di,dj) | di,dj $\\in\$ {-1,1} = {(-1,-1),(-1,1),(1,-1),(1,1)}}
 
 1) $\\sum_{i,j} x_{i,j,c} = 1 \quad \forall c\$ --> one crown in color c at coordinates (i,j)
 2) $\\sum_{c} x_{i,j,c} \leq 1 \quad \forall i,j\$ --> no tile (i,j) can have more than one crown
