@@ -50,7 +50,7 @@ def similar(rgb_val, comparison):
 
 # Want to build a 2D array using the rgb values and storing them in a dictionary with a letter assigned to them as a value. These will be used later for returning an char grid to work in the other file as input
 def build_2Darray(tile_dict, grid_size):
-    chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+    chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"]
     count = 0
     new_2Darray = []
     letter_pairs = {}
