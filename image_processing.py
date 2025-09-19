@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import os
 
 def process_grid(image_path, grid_size):
     assert os.path.exists(image_path)
