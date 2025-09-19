@@ -3,9 +3,9 @@ import numpy as np
 
 def process_grid(image_path, grid_size):
     img = cv2.imread(image_path)
-    if img is not None:
-        if img.all() == None:
-            raise ValueError("File path does not lead to an image")
+    #if img is not None:
+    if img.all() == None:
+        raise ValueError("File path does not lead to an image")
 
     # grayscale then binary (black and white) so contours can be found (only takes binary images)
     gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
