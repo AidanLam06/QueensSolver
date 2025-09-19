@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 
 def process_grid(image_path, grid_size):
+    assert os.path.exists(image_path)
     img = cv2.imread(image_path)
     #if img is not None:
     if img.all() == None:
