@@ -44,14 +44,14 @@ The program will return a board with the correct placements for the crowns or if
 ### Mathematically, this would be represented as:
 variables:
 - c = color
-- (i,j) are coordinates
-- diagonals = {(di,dj) | di,dj $\\in\$ {-1,1} = {(-1,-1),(-1,1),(1,-1),(1,1)}}
+- (i, j) are coordinates
+- diagonals = {(di, dj) | di, dj $\\in\$ {-1, 1} = {(-1, -1), (-1, 1), (1, -1), (1, 1)}}
 
-1) $\\sum_{i,j} x_{i,j,c} = 1 \quad \forall c\$ --> one crown in color c at coordinates (i,j)
-2) $\\sum_{c} x_{i,j,c} \leq 1 \quad \forall i,j\$ --> no tile (i,j) can have more than one crown
-3) $\\sum_{j,c} x_{i,j,c} \leq 1 \quad \forall i\$ --> no crown can have another crown in the same row
-4) $\\sum_{i,c} x_{i,j,c} \leq 1 \quad \forall j\$ --> no crown can have another crown in the same column
-5) $\ x_{i,j,c} + x_{i+di, j+dj, c'} \leq 1 \quad \forall i,j,c,c',(di,dj)\$ --> no crown can have another crown diagonally adjacent to it
+1) $\\sum_{i, j} x_{i, j, c} = 1 \quad \forall c\$ --> one crown in color c at coordinates (i, j)
+2) $\\sum_{c} x_{i, j, c} \leq 1 \quad \forall i,j\$ --> no tile (i, j) can have more than one crown
+3) $\\sum_{j, c} x_{i, j, c} \leq 1 \quad \forall i\$ --> no crown can have another crown in the same row
+4) $\\sum_{i, c} x_{i, j, c} \leq 1 \quad \forall j\$ --> no crown can have another crown in the same column
+5) $\ x_{i, j, c} + x_{i+di, j+dj, c'} \leq 1 \quad \forall i, j, c, c', (di,dj)\$ --> no crown can have another crown diagonally adjacent to it
 
 ## Issues
 If you encounter a situation where you use this to solve a LinkedIn Queens problem and it returns "INFEASIBLE" I would greatly appreaciate it if you could screenshot the board and send it through the issues tab in this repository
