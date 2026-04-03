@@ -26,7 +26,7 @@ example:
 
 
 - In the terminal, write the following
-```Powershell
+```
 python solver.py --image <your_image_path> --length <side_length>
 ```
 --> replacing your-image-path with the path to the screenshot you took of the board and side-length being the number of tiles along the side of the grid (for example the image above would have a side length of 9)
