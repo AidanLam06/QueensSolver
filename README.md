@@ -3,7 +3,7 @@ A program made to solve LinkedIn Queens grids
 
 ## Dependencies
 You will need to install ortools to be able to use this program
-```powershell
+```
 pip install ortools
 ```
 
@@ -14,7 +14,7 @@ This program uses Google's OR-Tools Constraint Programming and Boolean Satisfiab
 
 - Open up a terminal and navigate to the directory where you cloned/downloaded the repository to
 --> example:
-  ```Powershell
+  ```
   cd "C:\Users\user\Documents\GitHub\QueensSolver"
   ```
 - Take a screenshot of the Queens board such that the entire board is within the frame. The screenshot doesn't have to be perfect since the program handles borders and crops the image automatically, but do keep it close since the program won't work if the image doesn't handle as a grid.
